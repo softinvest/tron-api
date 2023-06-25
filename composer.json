@@ -1,0 +1,58 @@
+{
+  "name": "softinvest/tron-api",
+  "description": "A PHP API for interacting with Tron (Trx)",
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://github.com/softinvest/tron-api",
+  "authors": [
+    {
+      "name": "Shamsudin Serderov",
+      "email": "steein.shamsudin@gmail.com"
+    },
+    {
+      "name": "softinvest",
+      "email": "gbe@tuta.io"
+    }
+  ],
+  "keywords": [
+    "softinvest",
+    "tron-lib",
+    "tron-php",
+    "tron-api",
+    "tron-rest-api"
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "ext-bcmath": "*",
+    "symfony/polyfill-mbstring": "^1.8",
+    "guzzlehttp/guzzle": "^7.2",
+    "simplito/elliptic-php": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+    "php-coveralls/php-coveralls": "~2.0"
+  },
+  "suggest": {
+    "ext-gmp": "GMP is the preferred extension for big integer calculations",
+    "ext-bcmath": "BCmath is the fallback extension for big integer calculations",
+    "phpseclib/bcmath_compat": "BCmath polyfill for servers where neither GMP nor BCmath is available",
+    "ext-curl": "For loading OID information from the web if they have not bee defined statically"
+  },
+  "autoload": {
+    "psr-4": {
+      "SoftInvest\\TronAPI\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SoftInvest\\TronAPI\\Test\\": "tests"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
